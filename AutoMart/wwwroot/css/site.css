@@ -1,0 +1,303 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+img {
+    width: 100%;
+}
+
+.firstbox1 {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(250, 250, 250);
+    box-shadow: rgba(240, 240, 240) 10px 10px 10px;
+}
+
+.article1 {
+    display: inline-block;
+    margin: 20px;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: rgba(190, 190, 190) 10px 10px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+ .talk {
+     width: 570px;
+     margin-right: auto;
+     margin-left : auto;
+ }
+
+.article2 {
+    display: inline-block;
+    margin: 20px;
+    width: 600px;
+    height: 400px;
+    background-image : linear-gradient(to top right, #4B4A4A, #868584);
+    box-shadow: rgba(190, 190, 190) 10px 10px 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.article2 h5 {
+    color: white;
+}
+
+h5 {
+    text-align: center;
+}
+
+.mainbox {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  
+}
+
+.fornow {
+    display: inline-block;
+    width: 288px;
+    height: 210px;
+    box-sizing: border-box;
+    margin: 15px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: rgba(190, 190, 190) 10px 10px 20px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#myCarousel {
+    box-shadow: rgba(210, 210, 210) 10px 10px 10px;
+}
+
+
+.line1 {
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: scroll;
+}
+
+.line {
+    display: inline-block;
+    margin: 10px;
+    width: 300px;
+    height: 450px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: rgba(190, 190, 190) 10px 10px 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.used {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+    .used article {
+        display: inline-block;
+        margin: 10px;
+        width: 300px;
+        height: 300px;
+        background-color: rgb(240, 240, 240);
+        box-shadow: rgba(190, 190, 190) 10px 10px 20px;
+        border-radius: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+li {
+    display: inline;
+    margin: 10px;
+}
+
+.check {
+    width: 400px;
+    height: 25px;
+    display: inline-block;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+h6 {
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.searchHead {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+iframe {
+    width: 570px;
+    height: 300px;
+    border-radius: 7px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo {
+    height: 35px;
+}
+
+.bmw {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+}
+.story {
+    display: inline-block;
+    width: 385px;
+    height: 200px;
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.subtopic {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.vector {
+    width: 100px;
+}
+.carPhoto {
+    width: 600px;
+}
+.detailH {
+    text-align: center;
+}
+.button {
+    text-decoration: none;
+    color: #4B4A4A;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+.regmain {
+    text-align: center;
+}
+.row {
+    margin-left:auto;
+    margin-right:auto;
+}
+.searchb {
+    text-align: center;
+}
+.spand {
+    width: 100px;
+    display: inline-block;
+}
+.market {
+    width: 700px;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.spanda {
+    width: 200px;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.staff {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(250, 250, 250);
+    box-shadow: rgba(240, 240, 240) 10px 10px 10px;
+    text-align: center;
+}
+.missionp {
+    width: 300px;
+}
+.aboutbody {
+    width: 750px;
+    height: 220px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: rgba(240, 240, 240) 10px 10px 10px;
+    margin: 20px;
+    display: inline-block;
+}
+.abouthead {
+    width: 400px;
+    height: 170px;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(250, 250, 250);
+    box-shadow: rgba(240, 240, 240) 10px 10px 10px;
+    text-align: center;
+    margin: 20px;
+}
+.mission {
+    width: 390px;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(250, 250, 250);
+    box-shadow: rgba(240, 240, 240) 10px 10px 10px;
+    text-align: center;
+    margin: 20px;
+    float: left;
+}
+.missionPhoto {
+    width: 300px;
+    height:200px;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(250, 250, 250);
+    box-shadow: rgba(240, 240, 240) 10px 10px 10px;
+   
+}
+.aja {
+    width: 100px;
+    display: inline-block;
+}
+.aj {
+    width: 200px;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.sale {
+    width: 700px;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+}

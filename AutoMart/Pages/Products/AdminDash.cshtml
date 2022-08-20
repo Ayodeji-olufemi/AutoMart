@@ -1,0 +1,23 @@
+﻿@page
+@model AutoMart.Pages.Products.AdminDashModel
+@{
+}
+
+<div class="row">
+
+ @foreach(var roles in Model.myUsers)
+{
+    <div class="col-md-3">
+              <div class="card mb-4 box-shadow">
+               
+                <div class="card-body text-md-center">
+                  <h3 class="card-text font-monospace">@roles.Email</h3>
+
+                  <p class="card-text">@roles.Id</p>
+                  <p class="card-text">@roles.Email</p>
+
+                  </div>
+                </div>
+     </div>
+}
+</div>

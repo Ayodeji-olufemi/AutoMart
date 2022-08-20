@@ -1,0 +1,32 @@
+﻿@page
+@model AutoMart.Pages.Products.BuyCarModel
+@{
+}
+
+<main>
+
+    <div class="searchb">
+        <h4> Search by Car Name, Brand or Car Type</h4>
+        <form method="get">
+        <input type="text" name="searchbar" />
+        <input type="submit" value="Search" />
+    </form>
+    </div>
+    
+    @foreach (var item in Model.products) {
+        
+            <div class="line">
+                <article>
+                     <h4>@Html.DisplayFor(modelItem => item.Name) @Html.DisplayFor(modelItem => item.Brand)</h4>
+                     <img src="@item.Photo" alt= @item.Name>
+                     <p>@Html.DisplayFor(modelItem => item.Type)</p>
+                    <p>@Html.DisplayFor(modelItem => item.Description)</p>
+                    <p> @Html.DisplayFor(modelItem => item.Price)</p>
+                    <a asp-page="./Details" asp-route-id="@item.Id">view</a>
+                   <a asp-route-productId="@item.Id" asp-page="/Cart/Add">Add to Cart</a>
+                  
+                </article>
+            </div>
+        
+    }
+</main>

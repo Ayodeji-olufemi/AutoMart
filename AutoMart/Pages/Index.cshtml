@@ -1,0 +1,130 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="@Url.Content("~/img/martin.jpg")" class="bd-placeholder-img">
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Most Affordable Automarket</h1>
+            <p>No better platform with more affordable options at highly competitive rates.</p>
+            <p><a class="btn btn-lg btn-primary" asp-area="Identity" asp-page="/Account/Register">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="@Url.Content("~/img/benz.jpg")" class="bd-placeholder-img">
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>READY FOR YOUR NEW CAR?</h1>
+            <p>We have the widest variety of Makers and body Types for you to choose from.</p>
+            <p><a class="btn btn-lg btn-primary" href="~/Products/BuyCar">Browse Available Options</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="@Url.Content("~/img/fomular.jpg")" class="bd-placeholder-img">
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>UNCERTAIN?</h1>
+            <p>Our experienced sales representatives are available to give you</p>
+            <p>the best option for your taste and budget</p>
+            <p><a class="btn btn-lg btn-primary" href="Contact Us">Contact Us</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <br>
+<main>
+
+
+
+    <div class="firstbox1">
+
+
+        <article class="article1">
+        <h5>FIRST TIME BUYING A CAR?</h5>
+        <img class="bmw" src="~/img/vlog1.jpg" alt="image of car" />
+        <p class="talk">We would reccommend that as a first time car owner, you should not exhaust all your spendable budget on the car. There's alot to learn as a first time car owner and the cost of maintenance and repairs might come as a shock if unprepared</p>
+    </article>
+
+
+    <article class="article2">
+        <h5 class="searchHead">
+            Lets help you find your perfect car
+        </h5>
+        <!--<video controls>
+            <source src="~/img/The best new cars you can buy - carwow CAR OF THE YEAR!.mp4" type="video/mp4" />
+        </video>-->
+        <iframe src="https://www.youtube.com/embed/w5-lbxvztDM"></iframe>
+    </article>
+
+
+    </div>
+
+    <div class="subtopic">
+        <h2> steps to getting your desired car</h2>
+        <article class="story">
+            <img class="vector" src="~/img/01.jpg" />
+            <h4>Use the search function</h4>
+            <p>we have a wide variety oof car brands and types to meet each person's individual taste and function. Feel free to go through our collection in case your mind is not made up yet</p>
+            <a class="button" href="/Products/BuyCar">Check our Collection</a>
+        </article>
+        <article class="story">
+            <img class="vector" src="~/img/02.jpg" />
+            <h4>We are here to help!</h4>
+            <p>You can call our customer care anytime and you will be connected to experienced experts that will answer any questions you have and guide you towards the best car for you</p>
+            <a class="button" href="/Contact Us">Contact Us</a>
+        </article>
+        <article class="story">
+            <img class="vector" src="~/img/03.jpg" />
+            <h4>Best prices you can get</h4>
+            <p>We have partnered with numerous auto makers to get direct supplies from factories. This cuts out middle-man services and the extra cost they come with. in summary, you cannot get it cheaper</p>
+            <a class="button" href="/Products/BuyCar">Check our Collection</a>
+        </article>
+    </div>
+
+
+    <div class="mainbox">
+        <h2>Testimonials from previous customers</h2>
+        <article class="fornow">
+            <h4>John Doe</h4>
+            <p>The website is super easy to use and the car was delivered to my house the next day. also, the customer service was super helpful in my decision making.</p>
+        </article>
+                <article class="fornow">
+            <h4>Olumide Akerele</h4>
+            <p>I visited a few dealerships and checked other online options before i stumbled on here. the prices i found here was so much less than the others.</p>
+        </article>
+                <article class="fornow">
+            <h4>Robert Downy-Jnr</h4>
+            <p>Wish i found them earlier. I would have saved so much on my previous care purchases. well, better late than never they say. Been using them since i found them</p>
+        </article>
+        <article class="fornow">
+            <h4>Aamir Khan</h4>
+            <p>I really wanted to get a budget car that will serve as my daily driver without spending too much. i havent seen any customer service more helpful than here.</p>
+        </article>
+    </div>
+</main>
+

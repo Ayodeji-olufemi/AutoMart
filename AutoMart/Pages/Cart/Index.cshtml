@@ -1,0 +1,61 @@
+﻿@page
+@model AutoMart.Pages.Cart.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Your Cart</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Brand
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cart[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cart[0].Quantity)
+            </th>
+            <th>Price (&pound;)</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.cart) {
+            var product = Model.products.Where(p => p.Id == item.ProdcutId).FirstOrDefault();
+
+            <tr>
+                <td>
+                @Html.DisplayFor(modelItem => product.Brand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => product.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                 @Html.DisplayFor(modelItem => product.Price)
+            </td>
+            <td>
+                <a asp-page="./Del" asp-route-id="@item.CartId">Delete</a>
+            </td>
+
+        </tr>
+       
+}
+
+    </tbody>
+</table>
+<h3>total= @Model.total</h3>
+<button type="button">Checkout</button>
